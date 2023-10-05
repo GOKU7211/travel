@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+ <form action="web3" method="post">
+     {% csrf_token %}
+      <div>
+          <center>
+              <div><div></div></div><br>
+              <input type="text" name="username" placeholder="enter username"><br><div></div><br>
+        <input type="text" name="first_name" placeholder="first name"><br><div></div><br>
+        <input type="text" name="last_name" placeholder="last name"><br><div></div><br>
+        <input type="email" name="email" placeholder="email"><br><div></div><br>
+        <input type="password" name="password" placeholder="password"><br><div></div><br>
+        <input type="password" name="password2" placeholder="retype password"><br><div></div><br>
+        <input type="submit">
+          </center>
+      </div>
+ </form>
+</div>
+{% for j in messages %}
+{{i}}
+{% endfor %}
+</body>
+</html>
